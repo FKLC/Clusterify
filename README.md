@@ -1,2 +1,2 @@
 # Clusterify
-Clusterify is a React.js project that allows users to load their Spotify playlists, and separate them into clusters based on the audio features of the songs in the playlist. The user can then view the songs in each cluster, and create the playlist so that they can listen to them later. Try it [here](fklc.github.io/Clusterify/).
+Clusterify is a React.js project that allows users to load their Spotify playlists, and separate them into clusters based on the audio features of the songs in the playlist. The user can then view the songs in each cluster, and create the playlist so that they can listen to them later. Try it [here](https://fklc.github.io/Clusterify/).
