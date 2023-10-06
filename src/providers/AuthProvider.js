@@ -4,7 +4,7 @@ const defaultContext = {
   accessKey: null,
   login: () => {
     const client_id = 'b91216751d87492aaf4ebe5c80b47202';
-    const redirect_uri = window.location.origin;
+    const redirect_uri = window.location.href;
     const scope = 'playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public'
 
     const url = 'https://accounts.spotify.com/authorize'
