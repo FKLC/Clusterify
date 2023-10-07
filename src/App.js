@@ -41,7 +41,7 @@ export default function App() {
     const featureMatrix = features.map((feature) => {
       return filterKeys.map((key) => feature[key]);
     });
-    
+
     for (let i = 0; i < featureMatrix[0].length; i++) {
       const min = Math.min(...featureMatrix.map((vector) => vector[i]));
       const max = Math.max(...featureMatrix.map((vector) => vector[i]));
@@ -55,7 +55,7 @@ export default function App() {
       if (!acc[cluster]) {
         acc[cluster] = [];
       }
-      acc[cluster].push(tracks[index]);
+      acc[cluster].push([tracks[index], features[index]]);
       return acc;
     }, []);
 
@@ -78,7 +78,10 @@ export default function App() {
         <ClusterOptions onSubmit={cluster} />
       </AccordionItem>
       <AccordionItem title="Created Playlists">
-        <CreatedPlaylists playlists={createdPlaylists} />
+        <CreatedPlaylists
+          playlists={createdPlaylists}
+          filterKeys={filterKeys}
+        />
       </AccordionItem>
     </div>;
 
